@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jupyter Notebook</title>
+
+    <style type="text/css">
+        body {
+            background-image: url("DB/bg.jfif");
+            background-repeat: no-repeat;
+            background-size: 100% 100vh;
+        }
+
+        h1 {
+            margin-top: 3%;
+            color: #FFFAFA;
+            text-align: center;
+
+            -webkit-transition-property: -webkit-transform;
+            -webkit-transition-duration: 1s;
+            -moz-transition-property: -moz-transform;
+            -moz-transition-duration: 1s;
+            -webkit-animation-name: grow;
+            -webkit-animation-duration: 3s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-name: grow;
+            -moz-animation-duration: 3s;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-timing-function: linear;
+
+            transition-property: -moz-transform;
+            transition-duration: 1s;
+            animation-name: grow;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @-webkit-keyframes grow {
+            from {
+                -webkit-transform: scale(1);
+            }
+
+            to {
+                -webkit-transform: scale(1.333);
+            }
+        }
+
+        @-moz-keyframes grow {
+            from {
+                -moz-transform: scale(1);
+            }
+
+            to {
+                -moz-transform: scale(1.333);
+            }
+        }
+
+        @keyframes grow {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.333);
+            }
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        h2 {
+            color: #FF8C00;
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        a:link:not(#exclude),
+        a:visited:not(#exclude) {
+            text-decoration: none;
+            color: #FFFFE0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>My Undergrad Jupyter Notebooks</h1>
+        <br>
+        <hr>
+        <div class="menu">
+            <div style="width:30%; float:left; height:80%;">
+                <h2>Machine Learning</h2>
+                <h3 id="HW1"><a target="_blank" href="./ML/hw1.html">HW1: Logistic Regression</a></h3>
+                <h3 id="HW2"><a target="_blank" href="./ML/hw2.html">HW2: Bayesian Networks</a></h3>
+                <h3 id="HW3"><a target="_blank" href="./ML/hw3.html">HW3: Poisson Clustering</a></h3>
+                <h3 id="HW4"><a target="_blank" href="./ML/hw4.html">HW4: ReLU Neural Networks</a></h3>
+            </div>
+            <div style="width:30%; float:left; height:80%;">
+                <h2>Files and Databases</h2>
+                <h3 id="PS1"><a target="_blank" href="./DB/ps1.html">PS1: The COVID19 Database</a></h3>
+                <h3 id="PS2"><a target="_blank" href="./DB/ps2.html">PS2: Advanced SQL Queries</a></h3>
+                <h3 id="PS3"><a target="_blank" href="./DB/ps3.html">PS3: Python SQL & Indexing</a></h3>
+                <h3 id="PS4"><a target="_blank" href="./DB/ps4.html">PS4: Query Evaluation & FDs</a></h3>
+                <h3 id="PS5"><a target="_blank" href="./DB/ps5.html">PS5: noSQL Primer</a></h3>
+            </div>
+            <div style="width:30%; float:left; height:80%;">
+                <h2>Bioalgorithms</h2>
+                <h3 id="PS1"><a target="_blank" href="./BIO/ps1.html">PS1: Human Genome</a></h3>
+                <h3 id="PS2"><a target="_blank" href="./BIO/ps2.html">PS2: Transcription Factors</a></h3>
+                <h3 id="PS3"><a target="_blank" href="./BIO/ps3.html">PS3: Graphs & BWTs</a></h3>
+                <h3 id="PS4"><a target="_blank" href="./BIO/ps4.html">PS4: Sequence Alignment</a></h3>
+                <h3 id="PS5"><a target="_blank" href="./BIO/ps5.html">PS5: Peptides & Spectrums</a></h3>
+                <h3 id="PS6"><a target="_blank" href="./BIO/ps6.html">PS6: Mouse Strains</a></h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
