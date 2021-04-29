@@ -13185,7 +13185,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<p><strong>Problem 1:</strong> In the cell below use the given <code>**MedianStringMotifSearch()**</code>, and <code>**ScanAndScoreMotif()**</code> functions to find an optimal 10-base motif pattern and its location in each of the 7 given promoter regions in <a href="http://csbio.unc.edu/mcmillan/Comp555S21/motifs.fa" download="motifs.fa">motifs.fa</a>. Based on this result, make a prediction of how long it would have taken to find an optimal 12-base motif.</p>
+<p><strong>Problem 1:</strong> In the cell below use the given <code>MedianStringMotifSearch()</code>, and <code>ScanAndScoreMotif()</code> functions to find an optimal 10-base motif pattern and its location in each of the 7 given promoter regions in <a href="http://csbio.unc.edu/mcmillan/Comp555S21/motifs.fa" download="motifs.fa">motifs.fa</a>. Based on this result, make a prediction of how long it would have taken to find an optimal 12-base motif.</p>
 
 </div>
 </div>
@@ -13315,7 +13315,7 @@ AGCCTGGGCA + G
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<p><strong>Problem 3:</strong> A simple optimization can be applied to <code>**MedianStringMotifSearch()**</code> as follows: If ever during the <code>**ScanAndScoreMotif()**</code> function the Hamming distance <code>(totalDist</code> in <code>**ScanAndScoreMotif()**)</code>, exceeds the smallest Hamming distance seen thus far <code>(minHammingDist</code> in <code>**MedianStringMotifSearch()**)</code>, scanning through subsequent sequences can be terminated early. Implement this strategy and use it to search again for the best 10-base motif. Note that this optimization requires an additional <code>maxTotal</code> argument to be passed to the <code>**ScanAndScoreMotif()**</code>, and therefore both <code>**MedianStringMotifSearch()**</code> and <code>**ScanAndScoreMotif()**</code> require modification. Run the new optimized version, report its run time, and revise the estimate of how long it might take to find an optimal 12-base motif.</p>
+<p><strong>Problem 3:</strong> A simple optimization can be applied to <code>MedianStringMotifSearch()</code> as follows: If ever during the <code>ScanAndScoreMotif()</code> function the Hamming distance <code>(totalDist</code> in <code>ScanAndScoreMotif())</code>, exceeds the smallest Hamming distance seen thus far <code>(minHammingDist</code> in <code>MedianStringMotifSearch())</code>, scanning through subsequent sequences can be terminated early. Implement this strategy and use it to search again for the best 10-base motif. Note that this optimization requires an additional <code>maxTotal</code> argument to be passed to the <code>ScanAndScoreMotif()</code>, and therefore both <code>MedianStringMotifSearch()</code> and <code>ScanAndScoreMotif()</code> require modification. Run the new optimized version, report its run time, and revise the estimate of how long it might take to find an optimal 12-base motif.</p>
 
 </div>
 </div>
@@ -13440,7 +13440,7 @@ AGCCTGGGCA + G
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<p><strong>Problem 4:</strong> Your upper-bound <code>minHammingDist</code> estimate from <strong>Problem 2</strong> can be used to further accelerate <code>**MedianStringMotifSearch()**</code> as follows: It can be used as the intitial setting of the <code>minHammingDist</code> rather than setting it to <code>k\*len(DNA)</code> in addition to the changes made in <strong>Problem 3</strong>. In the cell provided below write <code>**EvenBetterMedianMotifSearch(DNA, k, minHammingDist)**</code>, where the extra argument is used to set your upper-bound prediction.</p>
+<p><strong>Problem 4:</strong> Your upper-bound <code>minHammingDist</code> estimate from <strong>Problem 2</strong> can be used to further accelerate <code>MedianStringMotifSearch()</code> as follows: It can be used as the intitial setting of the <code>minHammingDist</code> rather than setting it to <code>k\*len(DNA)</code> in addition to the changes made in <strong>Problem 3</strong>. In the cell provided below write <code>EvenBetterMedianMotifSearch(DNA, k, minHammingDist)</code>, where the extra argument is used to set your upper-bound prediction.</p>
 
 </div>
 </div>
@@ -13582,7 +13582,7 @@ AGCCTGGGCA + G
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<p><strong>Problem 5:</strong> The cost of generating the upper bound estimate in <strong>Problem 2</strong> was considerable. An alternative upper bound can be found by running <code>**ContainedMotifSearch()**</code>, which considers only <em>k</em>-mers that appear in the given sequences as possible motifs. Use this function with <em>k</em> = 12 to establish an alternative upper bound.</p>
+<p><strong>Problem 5:</strong> The cost of generating the upper bound estimate in <strong>Problem 2</strong> was considerable. An alternative upper bound can be found by running <code>ContainedMotifSearch()</code>, which considers only <em>k</em>-mers that appear in the given sequences as possible motifs. Use this function with <em>k</em> = 12 to establish an alternative upper bound.</p>
 
 </div>
 </div>
