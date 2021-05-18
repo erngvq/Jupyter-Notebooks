@@ -13163,7 +13163,7 @@ div#notebook {
     <span class="k">for</span> <span class="n">seq</span> <span class="ow">in</span> <span class="n">DNA</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span><span class="o">-</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
             <span class="n">motifSet</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">seq</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">k</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1"> Motifs in our set&#39;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">motifSet</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1"> motifs in our set&#39;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">motifSet</span><span class="p">))</span>
     <span class="n">bestAlignment</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">minHammingDist</span> <span class="o">=</span> <span class="n">k</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">DNA</span><span class="p">)</span>
     <span class="n">kmer</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
@@ -13609,7 +13609,7 @@ AGCCTGGGCA + G
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>3514 Motifs in our set
+<pre>3514 motifs in our set
 Wall time: 34.5 s
 </pre>
 </div>
